@@ -1,0 +1,8 @@
+# —— OpenAI
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-KEYWORD,openai
+
+# —— Google Gemini / Bard
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-KEYWORD,bard
