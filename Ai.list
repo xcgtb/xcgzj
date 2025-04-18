@@ -1,7 +1,7 @@
 #!NAME=AI Services (ChatGPT, Gemini, Claude)
 #!DESC=Combined rules for ChatGPT, Gemini (Bard), and Claude
 
-[Rule]
+
 # Google Gemini / Bard
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
