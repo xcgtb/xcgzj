@@ -1,11 +1,12 @@
 
 # AI服务整合规则集
-# 包含OpenAI、Claude、Gemini等主流AI服务
+# 包含OpenAI、Claude、Gemini、Bing、Meta等主流AI服务
 
 # Claude相关
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,api.anthropic.com
 
 # Google AI相关
 DOMAIN,ai.google.dev
@@ -18,6 +19,7 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
@@ -59,33 +61,23 @@ IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
 
-
-
-
 # Microsoft / Bing AI / Copilot
 DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,sydney.bing.com
 DOMAIN-SUFFIX,edgeservices.bing.com
 DOMAIN-SUFFIX,bingapis.com
-DOMAIN-SUFFIX,copilot.microsoft.com
-
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,microsoftcopilot.com
 
 # Meta AI / Llama
 DOMAIN-SUFFIX,llama.meta.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,ai.meta.com
 DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fbcdn.net
 
-
-
-
-# Grok (X/Twitter)
-DOMAIN-SUFFIX,grok.x.ai
-DOMAIN-SUFFIX,api.grok.ai
-DOMAIN-SUFFIX,grok-ai.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,grok.x.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-KEYWORD,grok
-
+# 其他AI服务
+DOMAIN-SUFFIX,perplexity.ai
