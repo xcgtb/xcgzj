@@ -1,43 +1,51 @@
-# ========================
-# Binance / OKX 域名分流规则（无后缀版）
-# ========================
-
-# Binance（币安）
+# > Binance
+DOMAIN-SUFFIX,binance.cc
+DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.im
 DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnappzh.com
 DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,binancecnt.com
-DOMAIN-SUFFIX,binancezh.com
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binancefuture.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,binance.charity
+DOMAIN-SUFFIX,binance.co
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,binance.vision
 DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,bnbchain.org
+DOMAIN-SUFFIX,binancezh.be
+DOMAIN-SUFFIX,binancezh.biz
+DOMAIN-SUFFIX,binancezh.cc
+DOMAIN-SUFFIX,binancezh.co
+DOMAIN-SUFFIX,binancezh.com
+DOMAIN-SUFFIX,binancezh.info
+DOMAIN-SUFFIX,binancezh.ink
+DOMAIN-SUFFIX,binancezh.kim
+DOMAIN-SUFFIX,binancezh.link
+DOMAIN-SUFFIX,binancezh.live
+DOMAIN-SUFFIX,binancezh.mobi
+DOMAIN-SUFFIX,binancezh.net
+DOMAIN-SUFFIX,binancezh.pro
+DOMAIN-SUFFIX,binancezh.sh
+DOMAIN-SUFFIX,binancezh.top
+DOMAIN-SUFFIX,bnappzh.mobi
+DOMAIN-SUFFIX,bsc.getblock.io
 DOMAIN-SUFFIX,bscscan.com
-DOMAIN-SUFFIX,trustwallet.com
-DOMAIN-SUFFIX,launchpad.binance.com
+DOMAIN-SUFFIX,binancecnt.com
+PROCESS-NAME,Binance.exe
+DOMAIN-KEYWORD,binance
 
-# OKX（欧易）
+# > Binance API
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,bnbstatic.com
+# > OKX
+DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx.cab
-DOMAIN-SUFFIX,okx.ac
-DOMAIN-SUFFIX,okx.me
-DOMAIN-SUFFIX,okxapp.com
 DOMAIN-SUFFIX,okx-dns.com
-DOMAIN-SUFFIX,okx-login.com
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,okg.com
-DOMAIN-SUFFIX,okex.com      # 旧域名仍然部分使用
-DOMAIN-SUFFIX,okcoin.com    # OKX 的前身
-
-# 明确 API 域名
-DOMAIN,api.binance.com
-DOMAIN,fapi.binance.com
-DOMAIN,sapi.binance.com
-DOMAIN,wapi.binance.com
-DOMAIN,www.okx.com
-DOMAIN,aws.okx.com
-
-# 可选 IP 段（仅供防封线路使用，可注释）
-# IP-CIDR,18.162.0.0/16,no-resolve
-# IP-CIDR,13.112.0.0/14,no-resolve
+DOMAIN-SUFFIX,okx-dns1.com
+DOMAIN-SUFFIX,okx-dns2.com
+PROCESS-NAME,OKX.exe
+DOMAIN-KEYWORD,okx
