@@ -1,0 +1,56 @@
+# Binance 币安规则
+# 币安主站
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.cc
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.us
+
+# 币安 CDN 和静态资源
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bnappzh.com
+
+# 币安 API
+DOMAIN-SUFFIX,binance-cloud.com
+DOMAIN-SUFFIX,bntrace.com
+
+# 币安其他服务
+DOMAIN-SUFFIX,binancezh.com
+DOMAIN-SUFFIX,binancezh.ac
+DOMAIN-SUFFIX,binancezh.cc
+DOMAIN-SUFFIX,binancezh.top
+DOMAIN-SUFFIX,binancezh.pro
+DOMAIN-SUFFIX,binancezh.ph
+DOMAIN-SUFFIX,binancezh.co
+
+# WebSocket 连接
+DOMAIN-KEYWORD,binance
+DOMAIN-KEYWORD,bnbstatic
+
+# OKX 欧易规则
+# 欧易主站
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,okg.com
+DOMAIN-SUFFIX,oklink.com
+
+# 欧易 CDN 和静态资源
+DOMAIN-SUFFIX,okex.org
+DOMAIN-SUFFIX,okexcn.com
+DOMAIN-SUFFIX,okexcdn.com
+DOMAIN-SUFFIX,okcoin.com
+
+# 欧易 API 和服务
+DOMAIN-SUFFIX,okx.cc
+DOMAIN-SUFFIX,okx-cdn.com
+DOMAIN-SUFFIX,aws.okex.com
+
+# 欧易其他域名
+DOMAIN-SUFFIX,ouyi.com
+DOMAIN-SUFFIX,ouyi.cc
+DOMAIN-SUFFIX,oyicn.com
+
+# WebSocket 连接
+DOMAIN-KEYWORD,okx
+DOMAIN-KEYWORD,okex
