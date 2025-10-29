@@ -18,6 +18,7 @@ DOMAIN,nbstream.binance.info
 DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,nbstream
 PROCESS-NAME,Binance.exe
+DOMAIN-SUFFIX,nftstatic.com
 
 # > Binance API
 DOMAIN-SUFFIX,binanceapi.com
