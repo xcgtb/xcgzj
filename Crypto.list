@@ -1,33 +1,14 @@
-# > Binance
-# > Binance (Enhanced)
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.net
-DOMAIN-SUFFIX,binance.org
-DOMAIN-SUFFIX,binance.info
-DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,bscscan.com
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.us
-DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binancezh.com
-DOMAIN-SUFFIX,binancezh.net
-DOMAIN-SUFFIX,binancezh.pro
-DOMAIN,nbstream.binance.info
-DOMAIN-KEYWORD,binance
-DOMAIN-KEYWORD,nbstream
-PROCESS-NAME,Binance.exe
-DOMAIN-SUFFIX,nftstatic.com
+DOMAIN,api.binance.com
+DOMAIN,accounts.binance.com
+DOMAIN,stream.binance.com
+DOMAIN,fapi.binance.com
+DOMAIN,dapi.binance.com
 
-# > Binance API
+# 域名后缀匹配
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,bnbstatic.com
-# > OKX
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx-dns.com
-DOMAIN-SUFFIX,okx-dns1.com
-DOMAIN-SUFFIX,okx-dns2.com
-PROCESS-NAME,OKX.exe
-DOMAIN-KEYWORD,okx
+DOMAIN-SUFFIX,saasexch.com
