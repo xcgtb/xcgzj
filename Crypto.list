@@ -1,14 +1,34 @@
-DOMAIN,api.binance.com
-DOMAIN,accounts.binance.com
-DOMAIN,stream.binance.com
-DOMAIN,fapi.binance.com
-DOMAIN,dapi.binance.com
-
-# 域名后缀匹配
+# > Binance Main
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.cc
 DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.im
+DOMAIN-SUFFIX,binance.co
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.charity
+
+# > Binance API & CDN & Tech
 DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,binance-corp.com
+DOMAIN-SUFFIX,bnapp.com
+DOMAIN-SUFFIX,bnet.com
+
+# > Binance Regional & Jump (防封备用)
+DOMAIN-SUFFIX,binancezh.com
+DOMAIN-SUFFIX,binancezh.co
+DOMAIN-SUFFIX,binancezh.cc
+DOMAIN-SUFFIX,binancezh.be
+DOMAIN-SUFFIX,binancezh.top
+DOMAIN-SUFFIX,binancezh.ink
+DOMAIN-SUFFIX,binancezh.ac
+DOMAIN-SUFFIX,binanceru.net
+
+# > Binance SaaS & Others
 DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,appsflyer.com
