@@ -1,0 +1,32 @@
+name: Build MRS Rules
+
+on:
+  push:
+    paths:
+      - "rules/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download mihomo
+        run: |
+          curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/latest/download/mihomo-linux-amd64.gz
+          gunzip mihomo.gz
+          chmod +x mihomo
+
+      - name: Build binance.mrs
+        run: |
+          mkdir -p dist
+          ./mihomo convert-ruleset domain \
+            -i rules/binance.list \
+            -o dist/binance.mrs
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrs
+          path: dist/*.mrs
