@@ -1,0 +1,43 @@
+name: Convert YAML to MRS
+
+on:
+push:
+branches:
+- main
+paths:
+- ‘**.yaml’
+- ’**.yml’
+workflow_dispatch:
+
+jobs:
+convert:
+runs-on: ubuntu-latest
+
+
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+    
+  - name: Download Meta conversion tool
+    run: |
+      wget -O meta https://github.com/MetaCubeX/meta-rules-dat/releases/latest/download/meta-linux-amd64
+      chmod +x meta
+      
+  - name: Convert YAML to MRS
+    run: |
+      # 转换所有YAML文件为MRS
+      for file in *.yaml; do
+        if [ -f "$file" ]; then
+          echo "Converting $file to MRS..."
+          ./meta convert ruleset domain yaml "$file" "${file%.yaml}.mrs"
+        fi
+      done
+      
+  - name: Commit and push MRS files
+    run: |
+      git config --local user.email "github-actions[bot]@users.noreply.github.com"
+      git config --local user.name "github-actions[bot]"
+      git add *.mrs
+      git diff --quiet && git diff --staged --quiet || git commit -m "Auto-generated MRS files"
+      git push
+
