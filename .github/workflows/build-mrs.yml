@@ -1,4 +1,4 @@
-name: Build MRS Rules
+name: Build Crypto MRS Rules
 
 on:
   push:
@@ -18,15 +18,15 @@ jobs:
           gunzip mihomo.gz
           chmod +x mihomo
 
-      - name: Build binance.mrs
+      - name: Build Crypto.mrs
         run: |
           mkdir -p dist
           ./mihomo convert-ruleset domain \
-            -i rules/binance.list \
-            -o dist/binance.mrs
+            -i rules/Crypto.list \
+            -o dist/Crypto.mrs
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: mrs
-          path: dist/*.mrs
+          name: Crypto-mrs
+          path: dist/Crypto.mrs
