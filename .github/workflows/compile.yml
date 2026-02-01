@@ -1,13 +1,11 @@
-name: Compile MRS RuleSet
+name: Compile MRS
 
-# 触发条件：当你修改了 yaml 文件，或者手动点击运行
 on:
   push:
     paths:
       - '**.yaml'
   workflow_dispatch:
 
-# 权限设置：允许机器人修改仓库文件
 permissions:
   contents: write
 
@@ -18,32 +16,20 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Mihomo & Compile
+      - name: Download and Setup Mihomo
         run: |
-          echo "正在下载 Mihomo 内核..."
-          # 下载最新的 Mihomo 内核 (Linux版)
           wget -O mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.18.1/mihomo-linux-amd64-v1.18.1.gz
-          
-          # 解压并赋予执行权限
           gunzip mihomo.gz
           chmod +x mihomo
-          
-          echo "开始编译 binance.yaml -> binance.mrs ..."
-          # 执行转换命令：convert-ruleset domain yaml 源文件 输出文件
-          ./mihomo convert-ruleset domain yaml binance.yaml binance.mrs
-          
-          echo "编译完成！"
-          ls -lh *.mrs
 
-      - name: Commit and Push MRS
+      - name: Compile Binance Rule
         run: |
-          # 配置 git 身份
+          ./mihomo convert-ruleset domain yaml binance.yaml binance.mrs
+
+      - name: Commit and Push
+        run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          
-          # 添加新生成的 mrs 文件
           git add binance.mrs
-          
-          # 如果文件有变化，就提交；如果没变化(例如重复运行)，不报错
-          git commit -m "Auto-compiled MRS file [skip ci]" || exit 0
+          git commit -m "Auto update MRS" || exit 0
           git push
